@@ -1,64 +1,565 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <h1 style="text-align:center; color:#003366; margin-top:20px;">Travel Adventures</h1>
-    <title>Travel Adventures</title>
-    <img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.magnific.com/premium-photo/travel-traveling-symbolic-picture-vacation-background-4_1032298-2456.jpg?semt=ais_hybrid&w=740&q=80" alt="Travel Adventures">
-<p style="text-align:center; margin:20px; line-height: 1.6;;"><a href="https://www.google.com/search?q=tourism+sri+lanka&sca_esv=ad011371f989b540&biw=1536&bih=695&sxsrf=ANbL-n7AmxEU2zPT23INpqGgpZnIHsHCdA%3A1778836855483&ei=d-UGaqybHaadseMPrqiiuAo&oq=Tourism+S&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVRvdXJpc20gUyoCCAAyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJyoAVDAZ1jknAFwB3gBkAEAmAHbAaABtg6qAQYxLjEwLjG4AQHIAQD4AQGYAhOgAs8PqAIRwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAhkQLhiABBiKBRhDGMcBGNEDGMgDGLAD2AEBwgITEC4YgAQYigUYQxjIAxiwA9gBAcICBxAjGOoCGCfCAg0QIxjJAhjwBRjqAhgnwgIWEAAYgAQYigUYQxjnBhjqAhi0AtgBAsICHxAuGIAEGIoFGEMY5wYYxwEY0QMYyAMY6gIYtALYAQLCAhkQLhiABBiKBRhDGOcGGMgDGOoCGLQC2AECwgIKECMYgAQYigUYJ8ICBBAjGCfCAgoQABiABBiKBRhDwgIQEAAYgAQYigUYQxixAxiDAcICChAuGIAEGIoFGEPCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIZEC4YgAQYigUYQxiXBRjcBBjeBBjgBNgBAsICEBAuGIAEGIoFGEMYsQMYgwHCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNEDwgINEAAYgAQYigUYQxixA8ICBBAAGB7CAggQABiABBiSA8ICCxAAGIAEGIoFGJIDwgINEAAYgAQYigUYQxjJA8ICEBAAGIAEGIoFGEMYsQMYyQOYAxHxBSmqF7U-t64biAYBkAYMugYECAEYCLoGBggCEAEYAZIHBjguMTAuMaAHyFCyBwYxLjEwLjG4B4EPwgcIMC4xLjEzLjXIB3uACAE&sclient=gws-wiz-serp">Visit the official website of Sri Lanka Tourism </a></p>
-<h2 style="color:#003366;">Packing Essentials</h2>
-<p style="margin:20px; line-height: 1.6;">Good preparation helps
-travellers enjoy a safe and comfortable journey.</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<ol style="margin-left: 40px;">
-    <li>Clothes</li>
-    <li>Travel Documents</li>
-    <li>Gadgets</li>
-    <ul>
-        <li>Laptop</li>
-        <li>Smartphone</li>
-    </ul>
-    <li>Toiletries</li>
-</ol>
+    :root {
+      --navy: #0a1628;
+      --deep: #112240;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --cream: #f5f0e8;
+      --white: #ffffff;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: rgba(201,168,76,0.25);
+    }
 
+    html { scroll-behavior: smooth; }
 
-<h3>Trip Cost Overview</h3>
-<table border="1" cellpadding="10" cellspacing="0">
-    <tr>
-        <th>Item</th>
-        <th>Cost (USD)</th>
-        <th>Notes</th>
-    </tr> 
-    <tr>
-        <td>Flight Ticket</td>
-        <td>1200</td>
-        <td>Round trip</td>
-    </tr>
-    <tr>
-        <td>Hotel</td>
-        <td>800</td>
-        <td>7 nights</td>
-    </tr>
-    <tr>
-        <td>Food</td>
-        <td>400</td>
-        <td>Estimated</td>
-    </tr>
-</table>
-<h3>Travel Information</h3>
-<p>Please enter your travel details:</p>
-<form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"></br><br>
-    <label for="Age">Age:</label></br>
-    <input type="number" id="age" name="age"><br><br>
-    <label for="Email">Email:</label></br>
-    <input type="email" id="email" name="email"><br></br>
-    <input type="submit" value="Submit">
-</form>
-<footer>
-    <p>Created by : Ruchiranga Renuka</p>
-</footer>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10,22,40,0.92);
+      backdrop-filter: blur(12px);
+      padding: 1rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.03em;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* HERO */
+    .hero {
+      height: 100vh; min-height: 600px;
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80') center/cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,22,40,0.82) 0%, rgba(10,22,40,0.45) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; padding: 0 1.5rem;
+      animation: fadeUp 1s ease both;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.25rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900; line-height: 1.05;
+      color: var(--white); margin-bottom: 1.5rem;
+    }
+    .hero-title span { color: var(--gold-light); }
+    .hero-subtitle {
+      font-size: 1.1rem; font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      max-width: 520px; margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500; font-size: 0.9rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.9rem 2.2rem;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .scroll-hint {
+      position: absolute; bottom: 2rem; left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.5); font-size: 0.75rem;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      animation: bounce 2s infinite;
+    }
+    .scroll-hint::after {
+      content: '';
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+    }
+
+    /* SECTIONS */
+    section { padding: 6rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; line-height: 1.15;
+      color: var(--navy); margin-bottom: 1rem;
+    }
+    .section-line {
+      width: 48px; height: 3px;
+      background: var(--gold);
+      margin-bottom: 2.5rem;
+    }
+
+    /* DESTINATION STRIP */
+    .dest-strip {
+      background: var(--navy);
+      padding: 5rem 1.5rem;
+    }
+    .dest-strip .section-title { color: var(--white); }
+    .dest-strip .section-tag { color: var(--gold); }
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .dest-card {
+      position: relative; border-radius: 4px; overflow: hidden;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+    }
+    .dest-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .dest-card:hover img { transform: scale(1.06); }
+    .dest-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 55%);
+    }
+    .dest-card-info {
+      position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem;
+    }
+    .dest-country {
+      font-size: 0.7rem; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 4px;
+    }
+    .dest-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--white); line-height: 1.2;
+    }
+
+    /* PACKING */
+    .packing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem; align-items: start;
+    }
+    .pack-list { list-style: none; }
+    .pack-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid rgba(10,22,40,0.08);
+    }
+    .pack-num {
+      width: 32px; height: 32px; flex-shrink: 0;
+      background: var(--navy);
+      color: var(--gold);
+      font-size: 0.8rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 2px;
+    }
+    .pack-label { font-size: 1rem; font-weight: 500; color: var(--navy); }
+    .pack-sub { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+    .pack-img {
+      border-radius: 4px; overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .pack-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* COST TABLE */
+    .cost-section { background: var(--navy); }
+    .cost-section .section-title { color: var(--white); }
+    .cost-section .section-tag { color: var(--gold); }
+    .cost-table-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    table {
+      width: 100%; border-collapse: collapse;
+      background: rgba(255,255,255,0.04);
+      border-radius: 4px; overflow: hidden;
+    }
+    thead tr { background: var(--gold); }
+    thead th {
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--navy);
+    }
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: background 0.2s;
+    }
+    tbody tr:hover { background: rgba(201,168,76,0.08); }
+    tbody td {
+      padding: 1rem 1.5rem;
+      font-size: 0.95rem; color: rgba(255,255,255,0.85);
+    }
+    .cost-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      color: var(--gold-light);
+      font-size: 0.8rem; font-weight: 500;
+      padding: 3px 10px; border-radius: 2px;
+    }
+    .total-row td {
+      font-weight: 700; font-size: 1rem;
+      color: var(--gold-light) !important;
+      border-top: 2px solid var(--gold);
+    }
+
+    /* FORM */
+    .form-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 3rem;
+      box-shadow: 0 24px 64px rgba(10,22,40,0.1);
+      max-width: 640px; margin: 0 auto;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1.25rem; }
+    .form-group label {
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted);
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      border: 1.5px solid rgba(10,22,40,0.12);
+      border-radius: 2px;
+      padding: 0.75rem 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--cream);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .submit-btn {
+      width: 100%;
+      background: var(--navy);
+      color: var(--gold);
+      border: none; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .submit-btn:hover { background: var(--deep); transform: translateY(-1px); }
+    .submit-btn:active { transform: translateY(0); }
+    .success-msg {
+      display: none;
+      background: rgba(29,158,117,0.1);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: #0f6e56;
+      border-radius: 2px;
+      padding: 0.875rem 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #060e1a;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .footer-text {
+      font-size: 0.82rem; color: rgba(255,255,255,0.35);
+      letter-spacing: 0.04em;
+    }
+    .footer-link { color: var(--gold); text-decoration: none; }
+    .footer-link:hover { color: var(--gold-light); }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 1rem; }
+      .nav-links { display: none; }
+      .packing-grid { grid-template-columns: 1fr; }
+      .pack-img { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-card { padding: 2rem 1.25rem; }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">✦ WanderPage</div>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#packing">Packing</a></li>
+      <li><a href="#costs">Costs</a></li>
+      <li><a href="#plan">Plan Trip</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Explore the world</p>
+      <h1 class="hero-title">Travel<br/><span>Adventures</span></h1>
+      <p class="hero-subtitle">Discover breathtaking destinations, plan your perfect journey, and create memories that last a lifetime.</p>
+      <a href="https://www.sltda.gov.lk/" target="_blank" class="hero-cta">Explore Sri Lanka ↗</a>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="dest-strip" id="destinations">
+    <div class="container">
+      <p class="section-tag">✦ Where to go</p>
+      <h2 class="section-title">Featured Destinations</h2>
+      <div class="dest-grid">
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?w=600&q=80" alt="Sri Lanka" loading="lazy"/>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-info">
+            <p class="dest-country">South Asia</p>
+            <p class="dest-name">Sri Lanka</p>
+          </div>
+        </div>
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Switzerland" loading="lazy"/>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-info">
+            <p class="dest-country">Europe</p>
+            <p class="dest-name">Switzerland</p>
+          </div>
+        </div>
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Japan" loading="lazy"/>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-info">
+            <p class="dest-country">East Asia</p>
+            <p class="dest-name">Japan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKING -->
+  <section id="packing">
+    <div class="container">
+      <p class="section-tag">✦ Be prepared</p>
+      <h2 class="section-title">Packing Essentials</h2>
+      <div class="section-line"></div>
+      <div class="packing-grid">
+        <ol class="pack-list">
+          <li class="pack-item">
+            <span class="pack-num">01</span>
+            <div><p class="pack-label">Clothing</p><p class="pack-sub">Layers, weather-appropriate outfits, comfortable walking shoes</p></div>
+          </li>
+          <li class="pack-item">
+            <span class="pack-num">02</span>
+            <div><p class="pack-label">Travel Documents</p><p class="pack-sub">Passport, visa, insurance cards, booking confirmations</p></div>
+          </li>
+          <li class="pack-item">
+            <span class="pack-num">03</span>
+            <div><p class="pack-label">Gadgets</p><p class="pack-sub">Laptop, smartphone, universal adapter, power bank</p></div>
+          </li>
+          <li class="pack-item">
+            <span class="pack-num">04</span>
+            <div><p class="pack-label">Toiletries</p><p class="pack-sub">Travel-size essentials, sunscreen, basic first-aid kit</p></div>
+          </li>
+          <li class="pack-item">
+            <span class="pack-num">05</span>
+            <div><p class="pack-label">Entertainment</p><p class="pack-sub">Books, headphones, downloaded offline maps</p></div>
+          </li>
+        </ol>
+        <div class="pack-img">
+          <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&q=80" alt="Packing essentials" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COST TABLE -->
+  <section class="cost-section" id="costs">
+    <div class="container">
+      <p class="section-tag">✦ Budget planning</p>
+      <h2 class="section-title">Trip Cost Overview</h2>
+      <div class="cost-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Cost (USD)</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flight Ticket</td>
+              <td><span class="cost-badge">$1,200</span></td>
+              <td>Round trip, economy class</td>
+            </tr>
+            <tr>
+              <td>Hotel</td>
+              <td><span class="cost-badge">$800</span></td>
+              <td>7 nights, mid-range</td>
+            </tr>
+            <tr>
+              <td>Food & Dining</td>
+              <td><span class="cost-badge">$400</span></td>
+              <td>Estimated daily budget</td>
+            </tr>
+            <tr>
+              <td>Local Transport</td>
+              <td><span class="cost-badge">$150</span></td>
+              <td>Buses, tuk-tuks, trains</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td><span class="cost-badge">$250</span></td>
+              <td>Tours, entry fees</td>
+            </tr>
+            <tr class="total-row">
+              <td>Total Estimated</td>
+              <td>$2,800</td>
+              <td>Per person</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="plan">
+    <div class="container">
+      <p class="section-tag" style="text-align:center">✦ Let's plan</p>
+      <h2 class="section-title" style="text-align:center">Plan Your Trip</h2>
+      <div class="section-line" style="margin:0 auto 2.5rem;"></div>
+      <div class="form-card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Ruchiranga Renuka" />
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="25" min="1" max="120"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination">
+              <option value="">Select destination…</option>
+              <option>Sri Lanka</option>
+              <option>Switzerland</option>
+              <option>Japan</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="travel-date">Travel Date</label>
+            <input type="date" id="travel-date" name="travel-date" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Any special requests?</label>
+          <textarea id="message" name="message" placeholder="Tell us about your dream trip…"></textarea>
+        </div>
+        <button class="submit-btn" onclick="handleSubmit()">Submit Travel Details ✦</button>
+        <div class="success-msg" id="success-msg">
+          ✓ Thank you! Your travel details have been received. We'll be in touch soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">✦ WanderPage</p>
+    <p class="footer-text">Created by <a href="#" class="footer-link">Ruchiranga Renuka</a> &nbsp;·&nbsp; Pure HTML &amp; CSS &nbsp;·&nbsp; 2025</p>
+  </footer>
+
+  <script>
+    function handleSubmit() {
+      const name  = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!name || !email) {
+        alert('Please fill in at least your name and email.');
+        return;
+      }
+      const msg = document.getElementById('success-msg');
+      msg.style.display = 'block';
+      setTimeout(() => msg.style.display = 'none', 5000);
+    }
+  </script>
+
 </body>
 </html>
